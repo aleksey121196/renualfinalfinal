@@ -1,0 +1,17 @@
+<div class="div2" *ngFor="let top of Men">
+  <ul class="ul2">
+    <li class="text-item">Price: {{ top.price }} &#8362;</li>
+    <li class="text-item">Sizes: {{ top.size.join(', ') }}</li>
+    <li class="add-to-bag">
+      <button (click)="addToCart(top)" [disabled]="top.addedToCart || !top.inStock">
+        {{ top.addedToCart ? 'Added to Cart' : (top.inStock ? 'Add To Bag' : 'Disabled') }}
+      </button>
+      <span *ngIf="!top.inStock" class="out-of-stock">Out of Stock</span>
+    </li>
+  </ul>
+  <ul class="ul2">
+    <li class="image-item">
+      <img [src]="'assets/men/' + top.men" [alt]="top.size[0]">
+    </li>
+  </ul>
+</div>

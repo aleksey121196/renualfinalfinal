@@ -1,1 +1,199 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the navbar container */
+  .div1 {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the navigation list */
+  .ul1 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Style the navigation links */
+  #li1 {
+    margin: 0;
+    display: flex; /* Enable flexbox for the list items */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style the active link */
+  .active {
+    background-color: #76e184;
+    color: white;
+  }
+  
+  /* Style the logo container */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the logo image */
+  .logo img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height to maintain aspect ratio */
+    margin-right: 5px; /* Add some spacing if needed */
+  }
+  
+  /* Style the active logo */
+  .logo.active {
+    background-color: #76e184;
+    color: white;
+  }
+  
+
+
+
+
+  /* Apply styles to the common parent div */
+.div2 {
+  margin: 20px;
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+}
+
+/* Style the ul inside the div */
+.ul2 {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Display list items in a row */
+  flex-direction: column; /* Display items in a column */
+  align-items: center; /* Align items vertically */
+}
+
+/* Style the text items in a column */
+.text-item {
+  text-align: center;
+  margin-bottom: 10px; /* Add spacing between text and image */
+}
+
+/* Style the image item */
+.image-item ul {
+  list-style-type: none; /* Remove list styling for the second ul */
+  padding: 0; /* Remove default padding */
+}
+
+.image-item img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Add to Bag button styling */
+.ul2 li.add-to-bag {
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Add this to your existing CSS */
+.out-of-stock {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* Style the logo container */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the logo image */
+.logo img {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+
+/* Style the item count */
+.item-count {
+  background-color: #ff0000; /* Red background */
+  color: #fff; /* White text */
+  padding: 5px 8px;
+  border-radius: 50%; /* Circular shape */
+  font-size: 12px; /* Adjust the font size as needed */
+  margin-left: 5px; /* Add spacing between logo and count */
+}
+
+
+/* bag.component.css */
+
+/* Style the container for the total payment and empty cart message */
+.container {
+  text-align: center;
+}
+
+/* Style the total payment */
+.total-payment {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style the message for an empty cart */
+.empty-cart-message {
+  font-size: 16px;
+  color: #888; /* You can choose the color you prefer */
+}
+
+
+/* home.component.css */
+
+/* Style the container for the empty home page message */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the message for an empty home page */
+.empty-home-message {
+  font-size: 24px;
+  color: #555; /* You can choose the color you prefer */
+}
+
+/* home.component.css */
+
+/* Style the container for the home content */
+.home-container {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Style the image */
+img {
+  max-width: 100%; /* Ensure the image is responsive */
+  margin-top: 20px;
+}
+

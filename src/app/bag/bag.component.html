@@ -1,0 +1,23 @@
+<div *ngIf="cartItems.length>0" class="container">
+<div class="div2" *ngFor="let item of cartItems">
+    <ul class="ul2">
+      <li class="text-item">{{ item.price }}&#8362;</li> 
+      <li class="text-item">{{ item.size }} </li>
+    </ul>
+
+    <ul class="ul2">
+      <li class="image-item">
+      <img  [src]="item.category === 'men' ? 'assets/men/' + item.men : 'assets/women/' + item.women" [alt]="item.size[0]">
+    </li>
+  </ul>
+
+</div>
+
+<p class="total-Payment">Total Payment: {{ totalPayment }}&#8362;</p>
+<p *ngIf="totalPayment>50" class="container">free shiping!</p>
+
+  </div>
+
+<div *ngIf="cartItems.length===0" class="container">
+  <p class="empty-cart-message">Your shopping cart is empty.</p>
+</div>
